@@ -5,7 +5,7 @@ Project built after learning **JavaScript**. I created this application to pract
 ---
 
 ## 🔗 Live Demo
-**Check out the live project here:** [View Live Demo](PASTE_YOUR_GITHUB_PAGES_LINK_HERE)
+**Check out the live project here:** [View Project](https://mahmoud-elesawy.github.io/ToDoList/)
 
 ---
 
