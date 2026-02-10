@@ -1,0 +1,155 @@
+:root {
+    --bg-color: #121212;
+    --card-bg: #1e1e1e;
+    --primary-purple: #8a2be2;
+    --text-color: #ffffff;
+    --danger: #ff4d4d;
+    --success: #2ecc71;
+    --accent: #f1c40f;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    direction: rtl;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin-top: 50px;
+}
+
+/* ================
+|    1- header  
+=================*/
+.header {
+    background-color: var(--primary-purple);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    margin-bottom: 30px;
+}
+
+.add-btn {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+    background: white;
+    color: var(--primary-purple);
+    font-size: 24px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.add-btn:hover {
+    transform: scale(1.1) rotate(90deg);
+}
+
+/* ================
+|    2- تنسيق المهمة 
+=================*/
+.task-item {
+    background-color: var(--card-bg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    border-right: 5px solid var(--primary-purple);
+    transition: 0.3s;
+}
+
+.done {
+    background-color: rgb(4, 100, 6);
+    border-right: none;
+}
+
+.task-item:hover {
+    transform: translateX(-5px);
+    background-color: #252525;
+}
+/* مش هتشتغل لو حركناها لفوق */
+.done:hover {
+    transform: translateX(-5px);
+    background-color: rgb(7, 129, 9);
+}
+/* مش هتشتغل لو حركناها لفوق */
+
+
+.task-item h2 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+/* حاوية النصوص عشان نضمن إن العنوان والتاريخ فوق بعض */
+.task-info {
+    display: flex;
+    flex-direction: column; /* بيخلي العناصر تحت بعض */
+    gap: 5px; /* مسافة بسيطة بين العنوان والتاريخ */
+}
+
+.task-date {
+    font-size: 0.85rem;
+    color: var(--text-muted, #b3b3b3);
+}
+
+/* تنسيق الأزرار */
+.btn {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+    color: white;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.delete { background-color: var(--danger); }
+.check { background-color: var(--success); }
+.edit { background-color: var(--accent); color: #000; }
+
+.btn:hover { opacity: 0.8; }
+
+/* ================
+|     Footer  
+=================*/
+.main-footer {
+    position: fixed;   
+    bottom: 20px;    
+    left: 20px;       
+    color: #666;   
+    font-size: 14px;
+    background: rgba(30, 30, 30, 0.8);
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: 1px solid #333;
+    z-index: 100;
+}
+.main-footer span {
+    color: #8a2be2;  
+    font-weight: bold;
+}
+
+.footer-link {
+    color: var(--primary-purple);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-link:hover {
+    text-underline-offset: 5px;
+    text-decoration: underline; 
+}

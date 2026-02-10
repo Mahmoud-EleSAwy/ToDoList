@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>ToDo List — Manage Your Day</title>
+    <!-- Sweetalert2 Library -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body class="dark-mode">
+    <div class="container">
+        <div class="header">
+            <h1>مهامي</h1>
+            <button id="add-btn" class="add-btn">+</button>
+        </div>
+
+        <div id="tasks-list">
+            <div class="task-item">
+                <div class="task-info">
+                    <h2>قراءة كتاب</h2>
+                    <span class="task-date"> <i class="fa-regular fa-calendar"></i> 5/2/2026</span>
+                </div>
+
+                <div class="actions">
+                    <button class="btn delete"> <i class="fa-solid fa-trash"></i> </button>
+                    <button class="btn check"> <i class="fa-solid fa-check"></i> </button>
+                    <button class="btn edit"> <i class="fa-solid fa-pen"></i> </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <footer class="main-footer">
+        <p>Made by <a href="https://www.linkedin.com/in/mahmoud-elesawy/" target="_blank" class="footer-link">Mahmoud Elesawy</a> &copy; 2026</p>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+
+</html>
