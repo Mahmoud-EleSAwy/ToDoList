@@ -154,3 +154,10 @@ body {
     text-decoration: underline; 
 }
 
+@media (max-width: 600px) {
+    .main-footer {
+        visibility: hidden;
+    }
+}
+
+
